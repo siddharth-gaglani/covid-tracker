@@ -2,16 +2,13 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 h1 {
   text-align: center;
-}
-
-h1 img {
-  width: 26px;
-  display: inline-block;
-  animation: rotation 2s infinite linear;
+  color: #000;
 }
 
 table {
@@ -22,14 +19,11 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid #292929;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
 
 .countryData ul {
   display: flex;
@@ -39,17 +33,17 @@ tr:nth-child(even) {
 
 .countryData ul li {
   list-style-type: none;
-  border: 1px solid #dddddd;
+  border: 1px solid #292929;
   width: 32%;
 }
 
 .heading {
-  padding: 15px;
-  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+  border-bottom: 1px solid #292929;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  color: #dddddd;
+  color: #fff;
   background-color: #000;
 }
 
@@ -58,21 +52,9 @@ tr:nth-child(even) {
 }
 
 .countryName div:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #292929;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.countryName div:nth-child(even) {
+  background-color: #5a5858;
 }
