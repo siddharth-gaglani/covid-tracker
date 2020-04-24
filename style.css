@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 img {
+  width: 26px;
+  display: inline-block;
+  animation: rotation 2s infinite linear;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.countryData ul {
+  display: flex;
+  text-align: center;
+  padding: 0px;
+}
+
+.countryData ul li {
+  list-style-type: none;
+  border: 1px solid #dddddd;
+  width: 32%;
+}
+
+.heading {
+  padding: 15px;
+  border-bottom: 1px solid #dddddd;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #dddddd;
+  background-color: #000;
+}
+
+.countryName div {
+  padding: 10px;
+}
+
+.countryName div:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
